@@ -188,3 +188,4 @@ npm run build --report
       vendorJsName: bundleConfig.vendor.js,
     }),
 ```
+#### &emsp;&emsp;5、对于个别页面调用的依赖资源包（例如：echarts）直接采用CDN引入，```<script src="https://cdn.bootcss.com/echarts/3.7.0/echarts.min.js"></script>```
