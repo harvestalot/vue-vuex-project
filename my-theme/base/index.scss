@@ -1,0 +1,37 @@
+
+/* 改变主题色变量 */
+$--color-primary: #66C17F;
+
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+
+
+
+// // Color
+// @primary-color : #66C17F;
+// @link-color    : #80CF96;
+
+// // Base
+// @text-color             : #000000;
+// // @border-radius-base     : 0px;
+// // @border-radius-small    : 0px;
+
+// //button
+// @btn-border-radius      : 0px;
+// @btn-border-radius-small: 0px;
+
+// // Border color
+// @border-color-base      : #dddddd;  // outside
+// @border-color-split     : #e8eaec;  // inside
+
+// // Background color
+
+// @menu-dark-title              : #000000;
+
+// // Layout and Grid
+
+// @layout-header-background    : #000000;

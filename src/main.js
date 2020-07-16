@@ -6,11 +6,20 @@ import ElementUI from 'element-ui';
 import router from './router'
 import store from './store'
 
-import 'element-ui/lib/theme-chalk/index.css';
+// import 'element-ui/lib/theme-chalk/index.css';
+import './assets/css/base.css';
+
+// 将自动注册所有组件为全局组件
+import dataV from '@jiaminghi/data-view'
+Vue.use(dataV)
+// 表单验证
+import FormValidate from "./verify/verify_manage";
+Vue.prototype.$FormValidate = FormValidate;
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI);
+
 
 /* eslint-disable no-new */
 new Vue({

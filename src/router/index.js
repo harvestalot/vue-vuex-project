@@ -1,24 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
-import Echarts from '@/components/Echarts'
+import user_router from './user'
+import Error from '@/components/Error'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+       path:"/login" ,
+       name:"Login",
+       component: () => import("@/views/login")
+    },
+    {
       path: '/',
-      name: 'HelloWorld',
-      component: () => import('@/components/HelloWorld'),
+      name: 'Login',
+      component: () => import('@/views'),
+      redirect: "/login",
       children:[
         {
-          path: 'echarts',
-          name: 'Echarts',
-        //   component: resolve => require( ['@/components/Echarts'], resolve)
-          component: () => import('@/components/Echarts') 
+           path:"home",
+           name:"Home",
+           component: () => import("@/views/home")
         },
       ]
     },
+    {
+        path:"*",
+        name:"Error",
+        component:Error,
+    },
+    ...user_router,
   ]
 })

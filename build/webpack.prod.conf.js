@@ -14,6 +14,12 @@ const bundleConfig = require("../bundle-config.json")
 
 const env = require('../config/prod.env')
 
+if(process.env.NODE_ENV === 'development') {
+  env = require('../config/dev.env')
+} else if (process.env.NODE_ENV === 'production') {
+  env = require('../config/prod.env')
+}
+
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
