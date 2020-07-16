@@ -1,4 +1,6 @@
-# vue-vuex-project
+# vue-vuex-project(一套代码配置多个项目开发)
+
+## **此项目为开发入门模板框架，可以满足对vuex的使用；cross-env环境变量的使用；全局scss动态加载；针对多项目的不同主题色配置；打包优化等入门了解。**
 
 > A Vue.js project
 
